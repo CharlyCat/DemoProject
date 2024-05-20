@@ -1,0 +1,65 @@
+
+/* CalendarTimetable.css */
+.table-full {
+  background-color: #FF6961; 
+  color: white;
+}
+
+.table-available {
+  background-color: #5cb85c;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table-unavailable {
+  background-color: #f0ad4e; 
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table-selected {
+  background-color: #5bc0de; 
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for table headers */
+th {
+  background-color: #eee;
+  color: #333;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Styling for table cells */
+td {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+/* Responsiveness: Adjusting table layout for smaller screens */
+@media screen and (max-width: 600px) {
+  td, th {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Adding a hover effect for available slots */
+.available:hover {
+  background-color: #50C878;
+  cursor: pointer;
+}
+
+/* Ensuring the text size is correct */
+td, th {
+  font-size: 1rem;
+}

@@ -1,0 +1,45 @@
+.jobLengthSlider {
+    width: 50%;
+}
+
+.jobLengthSlider .form-range {
+    --bs-range-thumb-bg: black;
+    background: linear-gradient(to right, black 0%, black var(--progress-percentage), blue var(--progress-percentage), blue 100%);
+}
+
+/* Thumb for Webkit browsers */
+.jobLengthSlider .form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: black;
+    border: 0;
+}
+
+/* Track : Webkit browsers */
+.jobLengthSlider .form-range::-webkit-slider-runnable-track {
+    background-color: #27cdf1;
+}
+
+/* Progress : Webkit browsers */
+.jobLengthSlider .form-range::-webkit-slider-runnable-track::before {
+    content: '';
+    background-color: black;
+    height: 100%;
+}
+
+/* Mozilla Firefox : thumb */
+.jobLengthSlider .form-range::-moz-range-thumb {
+    background-color: black;
+}
+
+/* Mozilla Firefox : progress bar */
+.jobLengthSlider .form-range::-moz-range-progress {
+    background-color: black;
+}
+
+/* Mozilla Firefox : track */
+.jobLengthSlider .form-range::-moz-range-track {
+    background-color: #27cdf1;
+}
